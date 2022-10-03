@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-shadow: border-box;
+}
+body{
+    margin-top: 50px;
+}
+.our-time{
+    text-align: center;
+    position: relative;
+    color: rgb(255, 253, 250);
+
+}
+.our-time img{
+    width: 100%;
+}
+.our-time .content{
+    background: rgba(253, 3, 3, 0.6);
+    position: relative;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-bottom: 40px;
+    align-items: center;
+    transform: perspective(400px) rotatey(-90deg);
+    transform-origin: center top 0;
+    transition:all 0.7s ease 0s ;
+    opacity: 0;
+}
+.our-time:hover .content,
+.our-time.after .content{
+    opacity: 1;
+    transform: perspective(400px)rotatey(0deg);
+}
+.our-time .content .title{
+    margin: 0,0,10px;
+    display: block;
+    font-size: 30px;
+    font-weight: 800;
+}
+.our-time .content .post{
+    margin: 0,0,30px;
+    display: block;
+    font-size: 30px;
+
+}
+.our-time .social{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.our-time .social li{
+    display: inline-block;
+}
+.our-time .social li a{
+    display: block;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    height: 50px;
+    width: 50px;
+    line-height: 40px;
+    border-radius: 5px;
+    background-color: rgb(135, 169, 101);
+    position: relative;
+    transition: all 0.4s ease ;
+}
+.our-time .social li a:hover{
+    border-radius: 45%;
+    transition: all 0.8s ease;
+}
